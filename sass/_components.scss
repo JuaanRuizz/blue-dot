@@ -1,0 +1,16 @@
+$main-color: #060A24;
+
+.btn-main {
+    background-color: #00F3BB;
+    color: $main-color;
+    align-items: center;
+    border: none;
+    border-bottom: #00f3bad5;
+    &.hover{
+        background-color:  linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: #FFFFFF;
+        cursor: pointer;
+        border: none;
+        border-bottom: linear-gradient(225deg, #0000fee0 0%, #00f0b8e3 100%);
+    }
+}

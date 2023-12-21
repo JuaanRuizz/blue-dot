@@ -1,0 +1,39 @@
+@use "../../blue-dot/sass/components";
+html {
+    min-width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navabr {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    .logo img{
+        max-width: 7rem;
+    }
+    .menu{
+        i {
+        max-width: 7rem;
+        color: $main-color ;
+        }
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: $main-color;
+    }
+        .word-line-through {
+        text-decoration: line-through;
+        }
+    .text {
+        font-family: 'IBM Plex Mono', monospace;
+        color: $main-color;
+    }
+}

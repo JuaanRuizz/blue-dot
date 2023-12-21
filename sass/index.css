@@ -1,0 +1,35 @@
+html {
+  min-width: 100vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navabr {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+}
+.navabr .logo img {
+  max-width: 7rem;
+}
+.navabr .menu i {
+  max-width: 7rem;
+  color: #060A24;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .title {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.main .word-line-through {
+  text-decoration: line-through;
+}
+.main .text {
+  font-family: "IBM Plex Mono", monospace;
+}/*# sourceMappingURL=index.css.map */
