@@ -1,4 +1,4 @@
-@use "../../blue-dot/sass/components";
+@use "../../blue-dot/sass/components" as *;
 html {
     min-width: 100vw;
 }
@@ -8,26 +8,37 @@ body {
     margin: 0;
 }
 
-.navabr {
-    display: flex;
-    justify-content: space-around;
+.navbar {
     background-color: #FFFFFF;
-    .logo img{
-        max-width: 7rem;
+    padding: 0px;
+    .logo {
+        padding: 10px 16px 63px 16px;
     }
-    .menu{
+    .menu { 
+        padding-right: 16px;
+        padding-bottom: 63px;
+        padding-left: 16px;
+        padding-top: 10px;
+
         i {
-        max-width: 7rem;
-        color: $main-color ;
+        width: 18px;
+        height: 12px;
+        color: $main-color;
         }
     }
 }
+
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     .title {
         font-family: 'IBM Plex Sans', sans-serif;
         color: $main-color;
+        font-size: 36px;
+        padding: 0 0 16px 16px;
     }
         .word-line-through {
         text-decoration: line-through;
@@ -35,5 +46,7 @@ body {
     .text {
         font-family: 'IBM Plex Mono', monospace;
         color: $main-color;
+        font-size: 14px;
+        padding: 0 0 16px 16px;
     }
 }

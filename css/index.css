@@ -1,3 +1,75 @@
-.logo img {
-  max-width: 7rem;
-}/*# sourceMappingURL=index.css.map */
+.btn-main {
+  background-color: #00F3BB;
+  color: #060A24;
+  align-items: center;
+  border: none;
+  border-bottom: rgba(0, 243, 186, 0.8352941176);
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-size: 16px;
+  width: 288px;
+  height: 46px;
+  line-height: 22px;
+  padding: 1 16px 1px 20px;
+}
+.btn-main:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  border-bottom: linear-gradient(225deg, rgba(0, 0, 254, 0.8784313725) 0%, rgba(0, 240, 184, 0.8901960784) 100%);
+}
+
+html {
+  min-width: 100vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  padding: 0px;
+}
+.navbar .logo {
+  padding: 10px 16px 63px 16px;
+}
+.navbar .menu {
+  padding-right: 16px;
+  padding-bottom: 63px;
+  padding-left: 16px;
+  padding-top: 10px;
+}
+.navbar .menu i {
+  width: 18px;
+  height: 12px;
+  color: #060A24;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .title {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #060A24;
+  font-size: 36px;
+  padding: 0 0 16px 16px;
+}
+.main .word-line-through {
+  text-decoration: line-through;
+}
+.main .text {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  font-size: 14px;
+  padding: 0 0 16px 16px;
+}
+
+/*# sourceMappingURL=index.css.map */
