@@ -72,4 +72,65 @@ body {
   padding: 0 0 16px 16px;
 }
 
+.episodes {
+  padding: 60px 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 1203.5px;
+  padding-top: 72px;
+}
+.episodes .episodes-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  line-height: 42px;
+  padding: 64px 16px 30px 16px;
+  transform: skew(0deg, 10deg);
+}
+.episodes .spotify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px 0 16px;
+  width: 100%;
+  height: 225px;
+  gap: 11px;
+  transform: skew(0deg, 10deg);
+}
+.episodes .background-skew {
+  width: 100%;
+  height: 1800px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  transform: skew(0deg, -10deg);
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us .the-secret-img {
+  padding-top: 500px;
+}
+.about-us .about-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  line-height: 42px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.about-us .about-text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  line-height: 22px;
+}
+
+.guest .guest-title {
+  font-family: IBMPlexSans;
+  font-size: 36px;
+  color: #060A24;
+}
+
 /*# sourceMappingURL=index.css.map */
