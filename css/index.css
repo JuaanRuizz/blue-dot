@@ -264,5 +264,8 @@ body {
   letter-spacing: 0;
   color: #060A24;
 }
+.footer .icons-social-networks a {
+  color: #060A24;
+}
 
 /*# sourceMappingURL=index.css.map */
