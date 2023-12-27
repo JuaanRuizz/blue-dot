@@ -118,12 +118,12 @@ body {
   height: 519px;
   width: 320px;
 }
-.about-us .about-title {
+.about-us .about-title h2 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 500px;
+  font-size: 36px;
   color: #060A24;
   line-height: 42px;
-  padding-left: 16px;
+  padding: 16px 16px;
 }
 .about-us .about-text {
   font-family: "IBM Plex Mono", monospace;
@@ -138,9 +138,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1230px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 1320px;
 }
 .guest .guest-title {
   font-family: "IBM Plex Sans", sans-serif;
@@ -148,8 +146,9 @@ body {
   color: #060A24;
   padding: 0 16px;
 }
-.guest .img-guest {
-  padding: 0 16px;
+.guest .img-guest img {
+  width: 320px;
+  height: 243px;
 }
 
 /*# sourceMappingURL=index.css.map */
