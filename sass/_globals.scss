@@ -1,4 +1,5 @@
-@use "../../blue-dot/sass/components" as *;
+@use "../sass/components" as *;
+$skew-color: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 html {
     min-width: 100vw;
 }
@@ -9,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #FFFFFF;
+    background-color: $white-color;
     padding: 0px;
     .logo {
         padding: 10px 16px 63px 16px;
@@ -35,7 +36,7 @@ body {
     justify-content: space-around;
     align-items: center;
     .title {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: $font-sans;
         color: $main-color;
         font-size: 36px;
         padding: 0 0 16px 16px;
@@ -44,7 +45,7 @@ body {
         text-decoration: line-through;
         }
     .text {
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: $font-mono;
         color: $main-color;
         font-size: 14px;
         padding: 0 0 16px 16px;
@@ -53,16 +54,16 @@ body {
 
 .episodes {
     padding: 60px 0;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     width: 100%;
     height: 1203.5px;
     padding-top: 72px;
     position: relative;
 
     .episodes-title{
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: $font-sans;
         font-size: 36px;
-        color: #FFFFFF;
+        color: $white-color;
         line-height: 42px;
         padding: 64px 16px 30px 16px;
         transform: skew(0deg, 10deg);
@@ -72,7 +73,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 16px 0 16px;
+        padding: 0 16px;
         width: 100%;
         height: 225px;
         gap: 11px;
@@ -82,7 +83,7 @@ body {
     .background-skew{
         width: 100%;
         height: 1800px;
-        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);   
+        background-image: $skew-color;   
         transform: skew(0deg,  -10deg); 
     }
 }
@@ -100,7 +101,7 @@ body {
         width: 320px;
     }
     .about-title h2{
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: $font-sans;
         font-size: 36px;
         color: $main-color;
         line-height: 42px;
@@ -108,7 +109,7 @@ body {
     }
     
     .about-text{
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: $font-mono;
         font-size: 14px;
         color: $main-color;
         line-height: 22px;
@@ -123,7 +124,7 @@ body {
     align-items: center;
     padding-top: 1320px;
     .guest-title{
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: $font-sans;
         font-size: 36px;
         color: $main-color;
         padding: 0 16px;
@@ -131,5 +132,97 @@ body {
     .img-guest img {
         width: 320px;
         height: 243px;
+    }
+}
+.subjects {
+    padding-top: 50px;
+    .title-sectionsub {
+        font-family: $font-sans;
+        color: $main-color;
+        font-size: 36px;
+        padding: 0 16px;
+    }
+    .icon-subject {
+        padding-top: 30px;
+    }
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    .background-skew{
+        position: relative;
+        width: 320px;
+        height: 330px;
+        background-image: $skew-color;  
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } 
+    }
+    .background-skew:before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform: skewY(-10deg);
+        transform-origin: top left;
+        content: " ";
+        position: absolute;
+        background: $skew-color;
+        z-index: -1;
+    }
+    .btn-main {
+        padding:  16px;
+        width: 288px;
+        height: 48px;
+    }
+    .title-news {
+        font-family: $font-sans;
+        color: $white-color;
+        padding: 30px 16px 30px 16px;
+        font-size: 36px;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 42px
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    background-color: $white-color;
+    width: 320px;
+    padding-top: 30px;
+    .text-footer {
+        width: 227px;
+        height: 22px;
+        font-family: $font-mono;
+        font-size: 14px;
+        color: $main-color; 
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+    .icons-social-networks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top:  10px;
+        padding-bottom: 60px;
+        width: 227px;
+        height: 22px;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0;
+        color: $main-color;
     }
 }
