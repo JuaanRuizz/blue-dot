@@ -60,7 +60,7 @@ ul {
   list-style: none;
 }
 
-.navbar {
+.navbarsec .navbar {
   height: 44px;
   display: flex;
   justify-content: space-between;
@@ -69,8 +69,7 @@ ul {
   position: relative;
   padding: 0 16px;
 }
-
-.label-burger .bar {
+.navbarsec .label-burger .bar {
   width: 18px;
   height: 2px;
   background-color: #000000;
@@ -78,28 +77,24 @@ ul {
   margin: 3px;
   border-radius: 1px;
 }
-
-.menu_hamburguesa {
+.navbarsec .menu-burger {
   display: none;
 }
-
-.menu_hamburguesa:checked ~ .ul_links {
+.navbarsec .menu-burger:checked ~ .ul_links {
   height: 224px;
 }
-
-.menu_hamburguesa:checked + .label-burger .middle-bar {
+.navbarsec .menu-burger:checked + .label-burger .middle-bar {
   opacity: 0;
 }
-.menu_hamburguesa:checked + .label-burger .top-bar {
+.navbarsec .menu-burger:checked + .label-burger .top-bar {
   transform: rotate(45deg) translateY(3px) translateX(4px);
   transition-duration: 0.5s;
 }
-.menu_hamburguesa:checked + .label-burger .bottom-bar {
+.navbarsec .menu-burger:checked + .label-burger .bottom-bar {
   transform: rotate(-45deg) translateY(-3px) translateX(4px);
   transition-duration: 0.5s;
 }
-
-.ul_links {
+.navbarsec .ul_links {
   width: 100%;
   background-color: #0000EC;
   position: absolute;
@@ -114,14 +109,12 @@ ul {
   gap: 25px;
   transition: all 0.3s;
 }
-
-.link {
+.navbarsec .link {
   font-size: 16px;
   font-family: "IBM Plex Mono", monospace;
   color: #FFFFFF;
 }
-
-.logo {
+.navbarsec .logo {
   padding: 10px;
 }
 

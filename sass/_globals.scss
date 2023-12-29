@@ -23,70 +23,75 @@ a{
 ul{
     list-style: none;
 }
-.navbar {
-    height: 44px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 0 $padding_left_right;
-}
-.label-burger{
-    .bar {
-        width: 18px;
-        height: 2px;
-        background-color: $black-color;
-        display: block;
-        margin: 3px;
-        border-radius: 1px;
-    }
-}
 
-.menu_hamburguesa{
-    display: none;
-}
-.menu_hamburguesa:checked ~ .ul_links{
-    height: 224px;
-}
-
-.menu_hamburguesa:checked + .label-burger{
-    .middle-bar{
-        opacity: 0;
+.navbarsec {
+    .navbar {
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 $padding_left_right;
     }
-    .top-bar{
-        transform: rotate(45deg) translateY(3px) translateX(4px);
-        transition-duration: 0.5s;
+    .label-burger {
+        .bar {
+            width: 18px;
+            height: 2px;
+            background-color: $black-color;
+            display: block;
+            margin: 3px;
+            border-radius: 1px;
+        }
     }
-    .bottom-bar{
-        transform: rotate(-45deg) translateY(-3px) translateX(4px);
-        transition-duration: 0.5s;
+
+    .menu-burger {
+        display: none;
     }
-}
 
-.ul_links {
-    width: 100%;
-    background-color: $burger-color;
-    position: absolute;
-    top: $altura_header;
-    left: 0;
-    height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 25px;
-    transition: all 0.3s;
-}
-.link {
-    font-size: 16px;
-    font-family: $font-mono;
-    color: $white-color;
-}
+    .menu-burger:checked ~ .ul_links {
+        height: 224px;
+    }
 
-.logo {
-    padding: 10px;
+    .menu-burger:checked + .label-burger {
+        .middle-bar {
+            opacity: 0;
+        }
+        .top-bar {
+            transform: rotate(45deg) translateY(3px) translateX(4px);
+            transition-duration: 0.5s;
+        }
+        .bottom-bar {
+            transform: rotate(-45deg) translateY(-3px) translateX(4px);
+            transition-duration: 0.5s;
+        }
+    }
+
+    .ul_links {
+        width: 100%;
+        background-color: $burger-color;
+        position: absolute;
+        top: $altura_header;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 25px;
+        transition: all 0.3s;
+    }
+
+    .link {
+        font-size: 16px;
+        font-family: $font-mono;
+        color: $white-color;
+    }
+
+    .logo {
+        padding: 10px;
+    }
 }
 
 .main {
