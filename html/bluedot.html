@@ -13,25 +13,42 @@
 </head>
 <body>
     <header class="header">
-        <section class="navbar">  
+        <nav class="navbar">
             <div class="logo">
                 <img src="../assets/img/logo.svg" alt="logo">
-            </div> 
-            <label class="label_burger" for="menu_burguer">
-                <i class="bi bi-list list_icon"></i>
-            </label>
-            <input type="checkbox" class="menu_burguer" id="menu_burguer">  
-            <ul class="ul_links">
+            </div>
+            
+            <input type="checkbox" class="menu_hamburguesa" name="" id="menu_hamburguesa">
 
-            </ul> 
-        </section>
-    </header>
+            <label class="label-burger" for="menu_hamburguesa">
+                <span class="bar top-bar"></span>
+                <span class="bar middle-bar"></span>
+                <span class="bar bottom-bar"></span>
+            </label>
+
+
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="#EPISODES" class="link">EPISODIOS</a>
+                </li>
+                <li class="li_links">
+                    <a href="#ABOUT-US" class="link">NOSOTROS</a>
+                </li>
+                <li class="li_links">
+                    <a href="#GUEST" class="link">ENTREVISTAS</a>
+                </li>
+                <li class="li_links">
+                    <a href="#SUBJECTS" class="link">TÓPICOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
     <section class="main">
         <h2 class="title">Hello <span class="word-line-through">world</span> pale blue dot.</h2>
         <p class="text">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
         <button class="btn-main">CONOCÉ MÁS</button>
     </section>
-    <section class="episodes">
+    <section class="episodes" id="EPISODES">
         <div class="background-skew">
             <h2 class="episodes-title">Episodios</h2>
             <div class="spotify">
@@ -55,7 +72,7 @@
             <img src="../assets/img/phone.png" alt="phone">
         </div>
         <div class="about-title">
-            <h2>De dónde venimos</h2>
+            <h2 id="ABOUT-US">De dónde venimos</h2>
         </div>
         <div class="about-text">
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
@@ -63,7 +80,7 @@
         </div>
     </section>
     <section class="guest">
-        <h2 class="guest-title">
+        <h2 class="guest-title" id="GUEST">
             Invitadas/os estelares
         </h2>
         <div class="img-guest">
@@ -88,7 +105,7 @@
         </div>
 
     </section>
-    <section class="subjects">
+    <section class="subjects" id="SUBJECTS">
         <h2 class="title-sectionsub">
             Algunos de nuestros temas
         </h2>
@@ -134,7 +151,7 @@
             © 2019— Hello blue pale dot
         </h4>
         <div class="icons-social-networks">
-            <a href="https://open.spotify.com/user/7gx7jt8lbvopu9gir60okr25w?si=6a0e0fb5f2a34cda">
+            <a href="https://open.spotify.com/user/7gx7jt8lbvopu9gir60okr25w?si=0d9c44582c504a5c">
                 <i class="bi bi-spotify"></i>
             </a>
             <a href="https://www.instagram.com/ruiz.png/">
