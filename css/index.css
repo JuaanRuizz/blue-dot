@@ -43,30 +43,79 @@
 
 html {
   min-width: 100vw;
+  scroll-behavior: smooth;
 }
 
-body {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
-  background-color: #FFFFFF;
-  padding: 0px;
+a {
+  text-decoration: none;
 }
-.navbar .logo {
-  padding: 10px 16px 63px 16px;
+
+ul {
+  list-style: none;
 }
-.navbar .menu {
-  padding-right: 16px;
-  padding-bottom: 63px;
-  padding-left: 16px;
-  padding-top: 10px;
+
+.navbarsec .navbar {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 16px;
 }
-.navbar .menu i {
+.navbarsec .label-burger .bar {
   width: 18px;
-  height: 12px;
-  color: #060A24;
+  height: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 3px;
+  border-radius: 1px;
+}
+.navbarsec .menu-burger {
+  display: none;
+}
+.navbarsec .menu-burger:checked ~ .ul_links {
+  height: 224px;
+}
+.navbarsec .menu-burger:checked + .label-burger .middle-bar {
+  opacity: 0;
+}
+.navbarsec .menu-burger:checked + .label-burger .top-bar {
+  transform: rotate(45deg) translateY(3px) translateX(4px);
+  transition-duration: 0.5s;
+}
+.navbarsec .menu-burger:checked + .label-burger .bottom-bar {
+  transform: rotate(-45deg) translateY(-3px) translateX(4px);
+  transition-duration: 0.5s;
+}
+.navbarsec .ul_links {
+  width: 100%;
+  background-color: #0000EC;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 25px;
+  transition: all 0.3s;
+}
+.navbarsec .link {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #FFFFFF;
+}
+.navbarsec .logo {
+  padding: 10px;
 }
 
 .main {

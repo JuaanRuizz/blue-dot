@@ -1,31 +1,96 @@
 @use "../sass/components" as *;
 $skew-color: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+$altura_header: 44px;
+$padding_left_right: 16px;
+$ancho_maximo: 1200px;
+$black-color: #000000;
+
+
 html {
     min-width: 100vw;
+    scroll-behavior: smooth;
 }
 
-body {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar {
-    background-color: $white-color;
-    padding: 0px;
-    .logo {
-        padding: 10px 16px 63px 16px;
-    }
-    .menu { 
-        padding-right: 16px;
-        padding-bottom: 63px;
-        padding-left: 16px;
-        padding-top: 10px;
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 
-        i {
-        width: 18px;
-        height: 12px;
-        color: $main-color;
+.navbarsec {
+    .navbar {
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 $padding_left_right;
+    }
+    .label-burger {
+        .bar {
+            width: 18px;
+            height: 2px;
+            background-color: $black-color;
+            display: block;
+            margin: 3px;
+            border-radius: 1px;
         }
+    }
+
+    .menu-burger {
+        display: none;
+    }
+
+    .menu-burger:checked ~ .ul_links {
+        height: 224px;
+    }
+
+    .menu-burger:checked + .label-burger {
+        .middle-bar {
+            opacity: 0;
+        }
+        .top-bar {
+            transform: rotate(45deg) translateY(3px) translateX(4px);
+            transition-duration: 0.5s;
+        }
+        .bottom-bar {
+            transform: rotate(-45deg) translateY(-3px) translateX(4px);
+            transition-duration: 0.5s;
+        }
+    }
+
+    .ul_links {
+        width: 100%;
+        background-color: $burger-color;
+        position: absolute;
+        top: $altura_header;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 25px;
+        transition: all 0.3s;
+    }
+
+    .link {
+        font-size: 16px;
+        font-family: $font-mono;
+        color: $white-color;
+    }
+
+    .logo {
+        padding: 10px;
     }
 }
 
