@@ -2,7 +2,6 @@ $main-color: #060A24;
 $white-color: #FFFFFF;
 $button-color:#00F3BB;
 $button-hover-color: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-$burger-color: #0000EC;
 $font-mono: 'IBM Plex Mono', monospace; 
 $font-sans: 'IBM Plex Sans', sans-serif;
 .btn-main {
@@ -46,3 +45,13 @@ $font-sans: 'IBM Plex Sans', sans-serif;
         font-weight: 600;
     }
 }
+
+@media (min-width: 430px) {
+    .btn-main {
+        width: 226px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+

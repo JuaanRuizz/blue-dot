@@ -4,6 +4,7 @@ $altura_header: 44px;
 $padding_left_right: 16px;
 $ancho_maximo: 1200px;
 $black-color: #000000;
+$burger-color: #0000EC;
 
 
 html {
@@ -43,6 +44,10 @@ ul{
             margin: 3px;
             border-radius: 1px;
         }
+    }
+
+    .label-burger {
+        cursor: pointer;
     }
 
     .menu-burger {
@@ -294,3 +299,116 @@ ul{
         color: $main-color;
     }
 }
+
+@media (min-width: 550px) {
+    .navbarsec {
+        padding: 22px 100px;
+        .logo img{
+            height: 36px;
+            width: 36px;
+        }
+        .label-burger {
+            display: none;
+        }
+        .ul_links {
+            position: static;
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            gap: 48px;
+            background-color: $white-color;
+        }
+        .link {
+            font-size: 16px;
+            background-color: $white-color;
+            color: $main-color;
+            font-family: $font-mono;
+            line-height: 28px;
+        }
+    }
+    .main {
+        padding: 60px 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        .title {
+            font-size: 64px;
+        }
+        .text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .episodes {
+        padding-bottom: 0;
+        .background-skew {
+            height: 1042px;
+        }
+        .episodes-title {
+            padding: 200px 200px 20px;
+            font-size: 48px;
+        }
+        .spotify {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 80px;
+            padding-left: 100px;
+            .spotify-card iframe {
+                width: 584px;
+                height: 232px;
+            }
+        }
+    }
+    .about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        top: 1500px;
+        .aboutexttitle {
+            padding-top: 0px;
+            padding-left: 80px;
+        }
+        .the-secret-img img {
+            width: 457.6px;
+            height: 660px;
+        }
+        .about-title {
+            font-size: 48px;
+        }
+        .about-text {
+            font-size: 16px;
+            line-height: 24px;
+            width: 464px;
+            height: 204px;
+            .p2 {
+                display: block;
+            }
+        }
+    }
+    .guest {
+        padding-top: 650px;
+        align-items: start;
+        .guest-title {
+            font-size: 48px;
+            padding-left: 200px;
+        }
+        .img-guest {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 0;
+            width: 100%;
+            padding: 0;
+        }
+        .img-guest img {
+            width: 480px;
+            height: 364px;
+        }
+    }
+
+}
+
