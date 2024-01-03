@@ -324,6 +324,11 @@ ul{
             color: $main-color;
             font-family: $font-mono;
             line-height: 28px;
+            transition: all 0.3s;
+        }
+        .link:hover  {
+            background-color: rgb(201, 201, 201);
+            border-radius: 5px;
         }
     }
     .main {
@@ -442,14 +447,16 @@ ul{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 20px 50px;
+        padding: 20px 100px;
+        .icons-social-networks {
+            font-size: 18px;
+        }
+        .text-footer {
+            font-size: 16px;
+            width: 500px;
+        }
     }
-    .icons-social-networks {
-        font-size: 18px;
-    }
-    .text-footer {
-        font-size: 16px;
-    }
+    
 
 }
 

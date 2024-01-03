@@ -353,6 +353,11 @@ ul {
     color: #060A24;
     font-family: "IBM Plex Mono", monospace;
     line-height: 28px;
+    transition: all 0.3s;
+  }
+  .navbarsec .link:hover {
+    background-color: rgb(201, 201, 201);
+    border-radius: 5px;
   }
   .main {
     padding: 60px 200px;
@@ -470,13 +475,14 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 100px;
   }
-  .icons-social-networks {
+  .footer .icons-social-networks {
     font-size: 18px;
   }
-  .text-footer {
+  .footer .text-footer {
     font-size: 16px;
+    width: 500px;
   }
 }
 
