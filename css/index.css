@@ -378,6 +378,7 @@ ul {
   }
   .episodes .background-skew {
     height: 1042px;
+    width: 100%;
   }
   .episodes .episodes-title {
     padding: 200px 200px 20px;
