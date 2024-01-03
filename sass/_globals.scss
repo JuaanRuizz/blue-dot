@@ -324,11 +324,16 @@ ul{
             color: $main-color;
             font-family: $font-mono;
             line-height: 28px;
-            transition: all 0.3s;
+            transition: all 0.2s;
         }
         .link:hover  {
-            background-color: rgb(201, 201, 201);
-            border-radius: 5px;
+            color: $button-color;
+            text-decoration: line-through; 
+        }
+        .link:active {
+            color: #060A24;
+            opacity: .56;
+            text-decoration: line-through;
         }
     }
     .main {
@@ -404,14 +409,14 @@ ul{
         .img-guest {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 80px;
-            gap: 10px;
+            grid-gap: 0px;
+            gap: 0px;
             width: 100%;
-            padding: 20px 100px;
+            padding: 0;
         }
         .img-guest img {
-            width: 480px;
-            height: 364px;
+            width: 100%;
+            height: auto;
         }
     }
     .subjects {
